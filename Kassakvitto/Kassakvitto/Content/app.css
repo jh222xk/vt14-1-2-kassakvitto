@@ -1,0 +1,47 @@
+﻿html, body {
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+}
+
+.wrapper {
+    margin: auto;
+    width: 600px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#receipt {
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFEDEDED', endColorstr='#FFBABABA');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ededed), color-stop(100%, lightgrey));
+    background: -webkit-linear-gradient(#ededed, lightgrey);
+    background: -moz-linear-gradient(#ededed, lightgrey);
+    background: -o-linear-gradient(#ededed, lightgrey);
+    background: linear-gradient(#ededed, #d3d3d3);
+    -webkit-box-shadow: white 0 1px 0 inset;
+    -moz-box-shadow: white 0 1px 0 inset;
+    box-shadow: white 0 1px 0 inset;
+    border: 1px solid #c7c7c7;
+    text-shadow: white 0 1px 0;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: #000;
+    width: 200px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color: #222222;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
