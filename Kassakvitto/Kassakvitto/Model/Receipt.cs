@@ -58,15 +58,15 @@ namespace Kassakvitto.Model
             Subtotal = subtotal;
 
             // Set the DiscountRate.
-            if (0 <= Subtotal && Subtotal <= zeroProcent)
+            if (Subtotal <= zeroProcent)
             {
                 DiscountRate = 0.00;
             }
-            else if (500 <= Subtotal && Subtotal <= fiveProcent)
+            else if (Subtotal <= fiveProcent)
             {
                 DiscountRate = 0.05;
             }
-            else if (1000 <= Subtotal && Subtotal <= tenProcent)
+            else if (Subtotal <= tenProcent)
             {
                 DiscountRate = 0.10;
             }
@@ -77,7 +77,7 @@ namespace Kassakvitto.Model
 
             // Calculate the MoneyOff.
             MoneyOff = DiscountRate * Subtotal;
-            
+
             // Calcualte the Total.
             Total = Subtotal - MoneyOff;
         }
